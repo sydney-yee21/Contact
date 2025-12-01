@@ -24,6 +24,15 @@ Description: Demonstrates how to create a navigation bar along with a dropdown m
 Date retrieved: Wednesday, November 12, 2025
 -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
     <style>
       html {
         font-size: 16px;
@@ -61,6 +70,11 @@ Date retrieved: Wednesday, November 12, 2025
         text-align: center;
         padding: 20px 10px;
         text-decoration: none;
+      }
+
+      ul li a,
+      ul .dropbtn {
+        font-family: "Open Sans", sans-serif;
       }
 
       p {
@@ -225,6 +239,7 @@ Date retrieved: Wednesday, November 12, 2025
         text-align: left;
         gap: 20px;
         justify-content: flex-start;
+        font-family: "Kedebideri", sans-serif;
       }
 
       .icon {
@@ -241,70 +256,69 @@ Date retrieved: Wednesday, November 12, 2025
       .info-link:hover {
         opacity: 0.7;
       }
-      
-       .width {
+
+      .width {
         width: 1200px;
-        margin: auto; 
+        margin: auto;
       }
-      
     </style>
   </head>
   <body>
     <div class="width">
       <ul>
-      <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
-      <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
-      <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Projects</a>
-        <div class="dropdown-content">
-          <a href="https://sydney-yee21.github.io/Videography/">Videography</a>
-          <a href="https://sydney-yee21.github.io/Service-Design/">Service Design</a>
-          <a href="https://sydney-yee21.github.io/Website-Redesign/">Website Redesign</a>
+        <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
+        <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
+        <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href="https://sydney-yee21.github.io/Videography/">Videography</a>
+            <a href="https://sydney-yee21.github.io/Service-Design/">Service Design</a>
+            <a href="https://sydney-yee21.github.io/Website-Redesign/">Website Redesign</a>
+          </div>
+        </li>
+        <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
+        <li><a href="https://sydney-yee21.github.io/Contact/"><b>Contact</b></a></li>
+      </ul>
+
+      <div class="contact-section">
+        <div class="contact-left">
+          <img src="desk.png" alt="desk with window view">
         </div>
-      </li>
-      <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
-      <li><a href="https://sydney-yee21.github.io/Contact/"><b>Contact</b></a></li>
-    </ul>
 
-    <div class="contact-section">
-      <div class="contact-left">
-        <img src="desk.png" alt="desk with window view">
-      </div>
+        <div class="contact-right">
+          <h1>CONTACT ME</h1>
 
-      <div class="contact-right">
-        <h1>CONTACT ME</h1>
+          <div class="contact-info">
+            <div class="info-item">
+              <img src="address.png" alt="Address icon" class="icon">
+              <div class="info-text">
+                <p>58 Bastedo Avenue <br> Toronto, ON</p>
+              </div>
+            </div>
 
-        <div class="contact-info">
-          <div class="info-item">
-            <img src="address.png" alt="Address icon" class="icon">
-            <div class="info-text">
-              <p>58 Bastedo Avenue <br> Toronto, ON</p>
+            <div class="info-item">
+              <img src="phone.png" alt="Phone icon" class="icon">
+              <p>647-877-9248</p>
+            </div>
+
+            <div class="info-item">
+              <img src="linkedin.png" alt="LinkedIn icon" class="icon">
+              <a href="https://www.linkedin.com/in/sydney-yee21/" class="info-link" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="info-item">
+              <img src="email.png" alt="Email icon" class="icon">
+              <a href="mailto:sydney.yee21@gmail.com" class="info-link" target="_blank">sydney.yee21@gmail.com</a>
             </div>
           </div>
-
-          <div class="info-item">
-            <img src="phone.png" alt="Phone icon" class="icon">
-            <p>647-877-9248</p>
-          </div>
-
-          <div class="info-item">
-            <img src="linkedin.png" alt="LinkedIn icon" class="icon">
-            <a href="https://www.linkedin.com/in/sydney-yee21/" class="info-link" target="_blank">LinkedIn</a>
-          </div>
-
-          <div class="info-item">
-            <img src="email.png" alt="Email icon" class="icon">
-            <a href="mailto:sydney.yee21@gmail.com" class="info-link" target="_blank">sydney.yee21@gmail.com</a>
-          </div>
         </div>
       </div>
+
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
+      </div>
     </div>
-    
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-    </div>
-    
+
   </body>
 </html>
